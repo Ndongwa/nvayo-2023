@@ -1,0 +1,12 @@
+name: test workfloow
+on: push
+jobs: 
+     test:
+          runs-on: ubuntu-latest
+          steps   :
+                  - name: checkout phase
+                    uses:  actions/checkout@v3
+                  - run: mkdir 2023
+                  - run: 
+                         touch mami.txt
+                         echo "welcome to my new web" > mami.txt
